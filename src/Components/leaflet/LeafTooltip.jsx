@@ -1,3 +1,4 @@
+import { click } from "@testing-library/user-event/dist/click";
 import React, { useMemo, useState } from "react";
 import {
   Circle,
@@ -9,6 +10,7 @@ import {
   Rectangle,
   TileLayer,
   Tooltip,
+  useMapEvents,
 } from "react-leaflet";
 
 const LeafTooltip = () => {

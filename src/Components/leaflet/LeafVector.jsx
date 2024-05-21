@@ -7,6 +7,7 @@ import {
     Popup,
     Circle,
     CircleMarker,
+    useMapEvent,
   } from "react-leaflet";
   
   const LeafVector = () => {
