@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import RoomIcon from "@mui/icons-material/Room";
 import {
   MapContainer,
   TileLayer,
@@ -8,7 +8,6 @@ import {
   Circle,
   Tooltip,
 } from "react-leaflet";
-
 
 const Display = () => {
   const [data, setData] = useState([]);
@@ -45,7 +44,7 @@ const Display = () => {
         <div key={index}>
           <Marker position={[item["x"], item["y"]]}>
             <Popup>{`Marker ${index + 1}`}</Popup>
-                  <Tooltip>Backend Data Result { `${item["x"]}`}</Tooltip>
+            <Tooltip>Backend Data Result {`${item["x"]}`}</Tooltip>
           </Marker>
           <Circle
             center={[item["x"], item["y"]]}
