@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.18",
@@ -11,19 +12,27 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "cesium": "^1.117.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "craco-cesium": "^1.2.0",
+    "geojson-vt": "^3.2.1",
+    "jszip": "^3.10.1",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
+    "react-cesium": "^0.0.1",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "react-scripts": "5.0.1",
+    "resium": "^1.17.3",
     "sequelize": "^6.37.3",
     "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -45,6 +54,11 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.12"
+    "@types/leaflet": "^1.9.12",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.91.0"
   }
 }

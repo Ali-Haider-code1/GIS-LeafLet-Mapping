@@ -1,4 +1,7 @@
+import CesiumMap from './Components/Cesium/Cesium';
 import LeafViewBounds from './Components/LeafViewBounds';
+import DBF from './Components/Pakmap/DBF';
+import Pakshape from './Components/Pakmap/GeoJsonFileLoading';
 import Display from './Components/leaflet/Display';
 import LeafDraggableMarker from './Components/leaflet/LeafDraggableMarker';
 import Leaf from './Components/leaflet/LeafEvents';
@@ -8,6 +11,7 @@ import LeafSvg from './Components/leaflet/LeafSvg';
 import LeafTooltip from './Components/leaflet/LeafTooltip';
 import LeafVector from './Components/leaflet/LeafVector';
 import Map from './Components/leaflet/Leafmap';
+
 
 
 function App() {
@@ -22,8 +26,12 @@ function App() {
       {/* <Display/> */}
       {/* <LeafPane/> */}
       {/* <LeafDraggableMarker /> */}
-      <LeafViewBounds/>
+      {/* <LeafViewBounds/> */}
 
+      {/* <CesiumMap /> */}
+      {/* <Pakshape/> */}
+      {/* <DbfFileLoading/> */}
+      <DBF/>
 
 
     </div>
